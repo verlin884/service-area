@@ -36,7 +36,11 @@ $polygonCoordinates = str_replace("\\n", "", $polygonCoordinates);
 
 ?>
 
-<section class="gmap_container">
+<section class="sva_container">
+    <div class="sva_header_content">
+        <h1><?= $title; ?> </h1>
+        <p><?= $description; ?></p>
+    </div>
     <div class="sva_map_container">
         <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
         <div id="sva_map"></div>
@@ -150,5 +154,5 @@ $polygonCoordinates = str_replace("\\n", "", $polygonCoordinates);
         });
     }
 </script>
-<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW3k7mWI6cEN5Y5oim6U1kufOSfO1tnNQ&callback=initMap&libraries=places&v=weekly">
+<script async src="https://maps.googleapis.com/maps/api/js?key=<?= $apiKey ?>&callback=initMap&libraries=places&v=weekly">
 </script>
