@@ -1,0 +1,10 @@
+@media only screen and (min-width: 768px) {
+    .sva_form {
+        max-width: 500px;
+    }
+    .sva_header_content{
+        max-width: 700px;
+    }
+
+    
+}
